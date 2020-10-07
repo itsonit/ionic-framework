@@ -90,6 +90,6 @@ const renderProgress = (value: number, buffer: number) => {
   return [
     <div class="progress" style={{ transform: `scaleX(${finalValue})` }}></div>,
     finalBuffer !== 1 && <div class="buffer-circles"></div>,
-    <div class="progress-buffer-bar" style={{ transform: `scaleX(${finalBuffer})` }}></div>,
+    <div class="progress-buffer-bar" style={{ width: `calc(${finalValue}) * 100%` }}></div>,
   ];
 };
